@@ -1,0 +1,27 @@
+{
+  "name": "rabbitmq-mongo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "rm -rf dist/ && tsc",
+    "watch": "tsc-watch --noClear -p ./tsconfig.json --onSuccess \"node ./dist/index.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "amqplib": "^0.10.4",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "mongoose": "^8.6.2"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.10.5",
+    "@types/bcrypt": "^5.0.2",
+    "@types/node": "^22.5.5",
+    "tsc-watch": "^6.2.0",
+    "typescript": "^5.6.2"
+  }
+}
